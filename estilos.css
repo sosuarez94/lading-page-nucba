@@ -1,44 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
 * {
-  font-family: "Montserrat";
-  width: 100%;
-  height: 100%;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header {
+body,
+html {
   width: 100%;
-  height: 60px;
+  height: 100%;
+}
+
+header {
   display: flex;
   justify-content: space-between;
-  background: #f9e0c8;
   align-items: center;
+  width: 100%;
+  height: 60px;
+  background: #f9e0c8;
   box-shadow: -2px 4px 11px -2px rgba(82, 49, 47, 0.6);
 }
 
 .img-box {
   width: 20%;
-  height: 80%;
-  position: relative;
   min-width: 70px;
-  max-height: 80%;
+  height: 80%;
 }
 
 .logo {
-  position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
   object-fit: contain;
 }
 
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 40%;
 }
@@ -46,60 +44,74 @@ header {
 .navbar-links {
   display: flex;
   gap: 0.5em;
-  align-items: center;
-  justify-content: space-around;
   list-style: none;
 }
 
-.navbar-links li a {
+.navbar-links a {
   text-decoration: none;
   color: #a25b55;
   font-weight: 600;
   font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #carrito {
   font-weight: 800;
 }
 
-#section-1 {
+main {
+  width: 95%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+section {
   display: flex;
   justify-content: space-between;
-  width: 95%;
-  height: 60vh;
-  margin: 1rem auto;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
+  margin: 1rem 0;
+}
+
+#section-1,
+#section-2,
+#section-3 {
+  height: 75vh;
+}
+
+#section-1, #section-3 {
+  width: 90%;
+  margin: 0 auto;
 }
 
 #section-1 .text-box {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem 0.7rem;
   justify-content: space-around;
   gap: 2rem;
   width: 70%;
-}
-
-#section-1 .img-section,
-#section-1 .text-box {
-  position: relative;
-  height: 100%;
+  padding: 1.5rem 0.7rem;
 }
 
 #section-1 .img-section {
   width: 30%;
 }
 
+#section-1 .img-section img,
+#section-1 .text-box {
+  height: 100%;
+}
+
+#section-1 .img-section img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.7rem;
+}
+
 .text-box h2 {
   font-size: 20px;
-  max-height: 20%;
   font-weight: 800;
 }
+
 .text-box p {
   color: black;
   font-size: 16px;
@@ -117,12 +129,84 @@ header {
   width: 30%;
 }
 
-.img-section img {
-  position: absolute;
-  top: 0;
-  left: 0;
+#section-2 {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#section-2 .card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#section-2 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 260px;
+  background: #f9e0c8;
+  border-radius: 25px;
+  padding: 2em;
+}
+
+.card h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #a25b55;
+  height: 15%;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.7rem;
+}
+
+.card p {
+  margin: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#section-3 h2 {
+  text-align: center;
+}
+
+.columna1,
+.columna2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.datos-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.datos-contacto img {
+  height: 30px;
+  width: 30px;
+}
+
+.datos-contacto p {
+  margin-left: 0.5em;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #F9E0C8;
+}
+
+footer img{
+  width: 114px;
+  height: 66px;
+  background: #F9E0C8;
+  margin: 10px;
 }
